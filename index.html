@@ -5,64 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <header>
-        <h3>Yongjiang Nie</h3>
-        <ul>
-            <li>Date of birth: 2005-08-12</li>
-            <li>Education: University of Calgary</li>
-            <li>
-                Projects you worked on before:
-                <ul>
-                    <li><a target="_blank" href="https://api.interactive-img.com/interactiveimage/61adca81e1adb.png">Smartcity</a></li>
-                    <li><a href="tourism.html">Tourism</a></li>
-                </ul>
-            </li>
-            <li>Current Job: Photographer</li>
-            <li>
-                Languages:
-                <ul>
-                    <li>Chinese</li>
-                    <li>English</li>
-                </ul>
-            </li>
-            <li>
-                Activities:
-                <ol>
-                    <li>Full Stack Bootcamp</li>
-                    <li>Computer Science</li>
-                    <li>Project Managerment Professional</li>
-                </ol>
-            </li>
-        </ul>
+    <header id="header">
+        <h1>Yongjiang Nie</h1>
+        <p>Date of birth: 2005-08-12</p>
+        <p>Education: University of Calgary</p>
+        <p>
+            Projects you worked on before:
+            <ul class="ul_proj">
+                <li><a target="_blank" href="https://api.interactive-img.com/interactiveimage/61adca81e1adb.png">Smartcity</a></li>
+                <li><a href="tourism.html">Tourism</a></li>
+            </ul>
+        </p>
+        <p>Current Job: Photographer</p>
+        <p>
+            Languages:
+            <ul class="ul_lan">
+                <li>Chinese</li>
+                <li>English</li>
+            </ul>
+        </p>
+        <p>
+            Activities:
+            <ol class="ol_act">
+                <li>Full Stack Bootcamp</li>
+                <li>Computer Science</li>
+                <li>Project Managerment Professional</li>
+            </ol>
+        </p>
     </header>
 
     <hr>
-    
-    <form>
-        <p>
-            <label for="s_name">Name</label>
-            <input type="text" id="s_name" placeholder="please input your name" required>            
-        </p>
+    <section id="contact" class="contact">
+        <form>
+            <div>
+                <label id="test" for="s_name">Name</label>
+                <input type="text" id="s_name" placeholder="please input your name" required>            
+            </div>
 
-        <p>
-            <label for="i_age">Age</label>
-            <input type="number" id="i_age" min="0" max="120">
-        </p>
+            <div>
+                <label for="i_age">Age</label>
+                <input type="number" id="i_age" min="0" max="120" placeholder="please input your age">
+            </div>
 
-        <p>
-            <label for="s_request">Request</label>
-            <textarea name="" id="s_request" cols="30" rows="10"></textarea>
-        </p>
+            <div>
+                <label for="s_request">Request</label>
+                <textarea name="" id="s_request" cols="30" rows="10" placeholder="please input your request"></textarea>
+            </div>
 
-        <p>
-            <label for="s_email">Email</label>
-            <input type="email" id="s_email">
-        </p>
+            <div>
+                <label for="s_email">Email</label>
+                <input type="email" id="s_email" placeholder="please input your email">
+            </div>
 
-        <button type="submit">Submit</button>
-    </form>
-    
+            <button type="submit">Submit</button>
+        </form>
+    </section>
 </body>
 </html>
